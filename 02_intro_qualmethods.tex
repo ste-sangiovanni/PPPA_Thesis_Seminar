@@ -1,0 +1,405 @@
+\documentclass[10pt, aspectratio=169]{beamer}
+\usetheme{Copenhagen}
+\usecolortheme{seahorse}
+\usefonttheme{serif}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{caption}
+\usepackage{amsmath}
+\usetikzlibrary{positioning}
+
+\newcommand{\shorttitle}{Introduction to Qualitative Research}
+\newcommand{\shortauthor}{Stefano Sangiovanni}
+
+\setbeamertemplate{navigation symbols}{}
+\defbeamertemplate*{footline}{myfootline}{%
+  \ifnum\insertframenumber>1
+    \hfill\insertframenumber/\inserttotalframenumber
+    \hfill
+}
+
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\shortauthor \hspace*{2em}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\shorttitle\hspace*{2em}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
+    \insertframenumber\,/\,\inserttotalframenumber\hspace*{1em}
+  \end{beamercolorbox}}%
+  \vskip0pt
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TITLE PAGE
+\title{\textbf{Introduction to Qualitative Research}}
+\author{Stefano Sangiovanni \\ \vspace{0.1cm} \small stefano.sangiovanni@unimi.it}
+\date{Milan, March 1, 2024}
+\newcommand{\coursename}{Politics, Philosophy and Public Affairs  \\ Thesis Seminars for PPPA students}
+\newcommand{\academicyear}{A.Y. 2023/24}
+
+\begin{document}
+\begin{frame}[plain]
+    \centering
+    \vspace*{1em} 
+    \footnotesize \coursename \\
+    \setbeamerfont{title}{size=\Large}
+    \setbeamerfont{author}{size=\large}
+    \titlepage
+    \centering
+\end{frame}
+
+
+
+\begin{frame}{Who am I? :)}
+\begin{itemize}
+    \item \textbf{PhD candidate in Political Studies} (NASP - UniMi)\vspace{0.3cm}
+    \item \textbf{Research interests}: Political parties, intra-party politics, leadership, crises and political scandals\vspace{0.3cm}
+    \item \textbf{Methodology}: Quantitative and computational methods (but I also really like qualitative stuff!)\vspace{0.3cm}
+    \item \textbf{Background}: Sociology, Administrations and Public Policy \vspace{0.3cm}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Index}
+\begin{columns}
+\column{0.6\textwidth}
+\begin{itemize}
+\item Introduction to Qualitative Research \vspace{0.3cm}
+\item In-depth interviews \vspace{0.3cm}
+\item Some advices on how to do interviews\vspace{0.3cm}
+\item Ethical Considerations \vspace{0.3cm}
+\item Introduction to Mixed Methods \vspace{0.3cm}
+\item Q\&A session
+\end{itemize}
+\column{0.4\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Images/thisisfine.png}
+    \label{fig:enter-label}
+\end{figure}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% post index content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Introduction to Qualitative Research}
+\begin{itemize}
+\item Offers \textbf{in-depth} exploration and understanding of phenomena\vspace{0.3cm}
+\item Utilizes an \textbf{interpretative} approach to uncover meanings and contexts\vspace{0.3cm}
+\item Involves different forms of data collection\vspace{0.3cm}
+\end{itemize}
+\vspace{0.3cm}
+\textbf{What really sets qualitative apart from quantitative research?}
+\begin{itemize}
+\item Quantitative research relies on standardized data collection methods\vspace{0.3cm}
+\item Qualitative research adopts a flexible, \textbf{context-sensitive approach} tailored to the research context\vspace{0.3cm}
+\end{itemize}
+\centering
+\textbf{Let method be the servant, not the master!}
+\end{frame}
+
+\begin{frame}{Pillars of Qualitative Analysis}
+\begin{columns}
+\column{0.6\textwidth}
+\begin{itemize}
+    \item \textbf{Subject}: The individual in their entirety and specificity\vspace{0.3cm}
+    \item \textbf{Objective}: Understanding subjects/interpreting a phenomenon\vspace{0.3cm}
+    \item \textbf{Type of Analysis}: Classifications, "ideal types"\vspace{0.3cm}
+    \item \textbf{Collected Data}: Texts from discursive interviews, ethnographies, official documents\vspace{0.3cm}
+    \item \textbf{Representativeness}: Limited to individual cases\vspace{0.3cm}
+\end{itemize}
+\column{0.4\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{Images/pillars.jpg}
+    \label{fig:pillars}
+\end{figure}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Qualitative research as an archipelago of techniques}
+\begin{columns}[T]
+\column{0.5\textwidth}
+Different techniques, according to: \vspace{0.3cm}
+\begin{itemize}
+    \item Observational approach\vspace{0.3cm}
+    \item Phenomenon under investigation\vspace{0.3cm}
+    \item Nature of produced empirical documentation
+\end{itemize}
+\column{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Archipelago.jpg}
+    \label{fig:archipelago}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Observational approach}
+\begin{center}
+\textbf{Focus on the agency of the researcher} \\
+Is the phenomenon under study "perturbed" by the researcher's actions? 
+\end{center}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Images/Perturbation.png}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{The Strength of Qualitative Research}
+\begin{columns}
+\column{0.7\textwidth}
+\begin{itemize}
+    \item \textbf{Context Sensitivity}: Participants can express themselves in their own words, to act in their natural environments\vspace{0.3cm}
+    \item \textbf{Openness and Flexibility}: Meeting the unexpected, producing new concepts\vspace{0.3cm}
+    \item \textbf{Participants' Cooperation}: Relevant to the issue of invisibility\vspace{0.3cm}
+    \item \textbf{Multivocality}: Evoking the emotions of the field
+\end{itemize}
+\column{0.3\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Cardano.jpg}
+    \label{fig:qualitative-strength}
+\end{figure}
+\end{columns}
+\end{frame}
+
+%%% INTERVIEWS
+
+
+\begin{frame}{Two "macro-types" of interviews}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Structured interviews}
+            \begin{itemize}
+                \item Impersonal data collector\vspace{0.3cm}
+                \item Directed question-answer\vspace{0.3cm}
+                \item Closed answers\vspace{0.3cm}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Qualitative interviews}
+            \begin{itemize}
+                \item In-depth\vspace{0.3cm}
+                \item Flexible, with an outline\vspace{0.3cm}
+                \item Aimed at understanding informants’ perspectives on their lives \vspace{0.3cm}
+                \item Experiences expressed in their own words
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Interviews and the Research Design}
+Should interviews be included in your research design? \\ \vspace{0.3cm}
+The point of a qualitative interview is to let the respondent tell their own story/narrative on their own terms. \\\vspace{0.3cm}
+Interviews can be more useful if:
+\begin{itemize}
+\item Settings and the people are not accessible otherwise (e.g., past events, life histories) \vspace{0.3cm}
+\item You are interested in the \textbf{narratives} about a specific issue.
+\end{itemize}
+\end{frame}
+
+            
+\begin{frame}{Useful Tips for in depth interviews}
+    \begin{columns}[T]
+        \begin{column}{0.6\textwidth}
+    \begin{itemize}
+                \item Not a questionnaire! Not a survey!\vspace{0.3cm}
+                \item The guide acts as a prompt, reminding you of necessary topics to cover and questions to ask \vspace{0.3cm}
+                \item Remind yourself of the key topics to be explored\vspace{0.3cm}
+                \item Try to always have in mind your outline
+    \end{itemize}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Images/Guide.jpg}
+        \label{fig:enter-label}
+    \end{figure}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Getting People to Talk with You}
+    Set the right tone at the beginning of the interview.
+\vspace{0.3cm}
+    Descriptive questions such as:
+    \begin{itemize}
+        \item "Can you tell me about a typical day in your life?"\vspace{0.3cm}
+        \item "I am interested in X; could you tell me how you got involved?"\vspace{0.3cm}
+        \item "I would like to know about dates/people/events/places that are most important to you. Could you start by listing them?"\vspace{0.3cm}
+        \item "Can you walk me through that experience?"
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{How to keep the "engagement"}
+            \begin{itemize}
+                \item Ask for clarifications\vspace{0.3cm}
+                \item Seek more details about feelings, places, and people described by the participant\vspace{0.3cm}
+                \item Bring back memories\vspace{0.3cm}
+                \item Engage in "knowing in the making"\vspace{0.3cm}
+                \item Try to cross-check for inconsistencies or deception\vspace{0.3cm}
+            \end{itemize}    
+\end{frame}
+
+\begin{frame}{Listening and support techniques}
+\begin{columns}
+\column{0.7\textwidth}
+    \begin{itemize}
+        \item \textbf{Silence}: moments of pause allow individuals to process their thoughts\vspace{0.3cm}
+        \item \textbf{Continuators}: non-verbal signals indicating attention and interest in listening\vspace{0.3cm}
+        \item \textbf{Echo Technique}: pepetition of keywords or phrases to confirm understanding and support the speaker\vspace{0.3cm}
+        \item \textbf{Recapitulation}
+    \end{itemize}
+\column{0.3\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/listening.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Ethics of (qualitative) Research}
+\begin{columns}
+\column{0.5\textwidth}
+Key principles:
+\begin{itemize}
+    \item Minimization of harm\vspace{0.3cm}
+    \item Respect for autonomy\vspace{0.3cm}
+    \item Protection of privacy and confidentiality\vspace{0.3cm}
+    \item Be always careful to research/subject relation\vspace{0.3cm}
+    \item Ethics in research: Mertonian Norms of Science
+\end{itemize}
+\column{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Ethics.jpg}
+    \label{fig:ethical-considerations}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Research and the Invasion of Privacy}
+\begin{center}
+Researchers must get \textbf{informed consent} from subjects \\    
+\end{center}
+\vspace{0.3cm}
+Important aspects of the informed consent:    
+    \begin{itemize}
+        \item two (signed) copies\vspace{0.3cm}
+        \item who you are, what is your research about\vspace{0.3cm}
+        \item they can interrupt the interview in any copy\vspace{0.3cm}
+        \item the records will be destroyed after X years\vspace{0.3cm}
+    \end{itemize}
+\begin{center}
+    \textbf{Always protect and be careful to anonymity and confidentiality}
+\end{center}
+\end{frame}
+
+\begin{frame}{An Introduction to Mixed Methods}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+    \begin{itemize}
+        \item Perhaps "mixed methods" are the best of both worlds…\vspace{0.3cm}
+        \item Combining quantitative and qualitative elements\vspace{0.3cm}
+        \item Qualitative - Quantitative design\vspace{0.3cm}
+        \item Quantitative - Qualitative design
+    \end{itemize}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/mix.png}
+    \label{fig:ethical-considerations}
+\end{figure}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Motivations for Mixed Methods}
+    \begin{itemize}
+        \item Qualitative as a follow-up to (e.g. interviews) to quantitative findings\vspace{0.3cm}
+        \item Exploratory qualitative study (e.g. identify hypotheses) and then quantitative study for empirical testing\vspace{0.3cm}
+    \end{itemize}
+\centering
+\textbf{Always justify your research design! }
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{Images/mixedmethods.PNG}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Challenges of Mixed Methods}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{itemize}
+    \item Mismatching of indicators from qualitative and quantitative components\vspace{0.3cm}
+    \item Feasibility: more time, work and skills!\vspace{0.3cm}
+    \item It's difficult to see (and to justify!) how two parts fit into the whole\vspace{0.3cm}
+\end{itemize}
+\column{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/VALUE.png}
+    \label{fig:enter-label}
+\end{figure}
+\end{columns}
+\vspace{0.5cm}
+\centering
+Use mixed methods only if adds \textbf{value} to your research!
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Final slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+\centering
+\vspace{0.6cm}
+\textbf{\large Thank You for Your Attention! Any questions?}
+\vspace{0.3cm}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/Galadriel.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Bibliography}
+
+\begin{itemize}
+    \item Cardano M. (2020), Defending Qualitative Research: Design, Analysis and Textualization, London, Routledge
+    \item Hammersley and Traianou, Ethics in Qualitative Research 2012
+    \item Morgan, D.L. (1996), Focus groups. Annual review of sociology, 22.1:129-152.
+    \item Morgan, D. L., Krueger, R. A., \& King, J. A. (1998). The focus group kit, Vols. 1–6. Sage.
+    \item Patton, M. Q. (2005). Qualitative Research. In Encyclopedia of Statistics in Behavioral Science. Wiley. 
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}

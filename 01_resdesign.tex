@@ -1,0 +1,570 @@
+\documentclass[10pt, aspectratio=169]{beamer}
+\usetheme{Copenhagen}
+\usecolortheme{seahorse}
+\usefonttheme{serif}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{caption}
+\usepackage{amsmath}
+\usetikzlibrary{positioning}
+
+\newcommand{\shorttitle}{How to plan a social sciences research design}
+\newcommand{\shortauthor}{Stefano Sangiovanni}
+
+\setbeamertemplate{navigation symbols}{}
+\defbeamertemplate*{footline}{myfootline}{%
+  \ifnum\insertframenumber>1
+    \hfill\insertframenumber/\inserttotalframenumber
+    \hfill
+}
+
+
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\shortauthor \hspace*{2em}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\shorttitle\hspace*{2em}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
+    \insertframenumber\,/\,\inserttotalframenumber\hspace*{1em}
+  \end{beamercolorbox}}%
+  \vskip0pt
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TITLE PAGE
+\title{\textbf{How to plan a social sciences research design}}
+\author{Stefano Sangiovanni \\ \vspace{0.1cm} \small stefano.sangiovanni@unimi.it}
+\date{Milan, February 15, 2024}
+\newcommand{\coursename}{Politics, Philosophy and Public Affairs  \\ Thesis Seminars for PPPA students}
+\newcommand{\academicyear}{A.Y. 2023/24}
+
+\begin{document}
+\begin{frame}[plain]
+    \centering
+    \vspace*{1em} 
+    \footnotesize \coursename \\
+    \setbeamerfont{title}{size=\Large}
+    \setbeamerfont{author}{size=\large}
+    \titlepage
+    \centering
+\end{frame}
+
+
+
+\begin{frame}{Who am I? :)}
+\begin{itemize}
+    \item \textbf{PhD candidate in Political Studies} (NASP - UniMi)
+    \item \textbf{Research interests}: Political parties, intra-party politics, leadership, crises and political scandals
+    \item \textbf{Methodology}: Quantitative and computational methods (but I also really like qualitative stuff!)
+    \item \textbf{Background}: Sociology, Administrations and Public Policy 
+\end{itemize}
+\vspace{0.3cm}
+\begin{block}{Goal for today}
+\centering
+Provide a roadmap and practical advice to help you create a social science research design, in order to help you write a more "sociological/politological" thesis or essay
+\end{block}
+\end{frame}
+
+
+\begin{frame}[plain]
+\begin{figure}
+%Ask for better quality
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/locandina.PNG}
+\end{figure}
+    
+\end{frame}
+
+\begin{frame}{Index}
+\begin{columns}
+\column{0.6\textwidth}
+\begin{itemize}
+    \item Formulating a good research question \vspace{0.3cm}
+    \item How to "deviate" from a full philosophical thesis \vspace{0.3cm}
+    \item Qualitative and quantitative methods\vspace{0.3cm}
+    \item Strategies for case selection\vspace{0.3cm}
+    \item Q\&A section 
+\end{itemize}
+\column{0.4\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Images/thisisfine.png}
+    \label{fig:enter-label}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{From a research topic to a research question}
+\begin{columns}
+\column{0.6\textwidth}
+\textbf{What makes a good research topic?} \vspace{0.2cm}
+\begin{itemize}
+\item Phenomena, events, processes, outcomes \vspace{0.2cm}
+\item Avoid assembling random facts on a very broad topic! \vspace{0.2cm}
+\item Must be focused (not too broad, not too narrow) \vspace{0.2cm}
+\item Point out a specific aspect of the topic \vspace{0.2cm}
+\item Start from a personal interest! 
+\end{itemize}
+\column{0.4\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Images/populism.jpg}
+\caption{The Myth of Populism}
+\label{fig:enter-label}
+\end{figure}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Good questions to ask yourself about a general topic}
+%% Effects of social media on mental health
+\begin{itemize}
+    \item \textbf{History}: How did it develop over time? \vspace{0.3cm}
+    \item \textbf{Structure and Composition}: How does your topic fit into a context or larger structure? \vspace{0.3cm}
+    \item \textbf{Categorization}: Can your topic be grouped into types? How does it compare with others?\vspace{0.3cm}
+    \item \textbf{Negative Questions}: Why did this topic not develop the same way in other places? \vspace{0.4cm}
+\end{itemize}
+\begin{center}
+%% the goal is to narrow our topic down
+\textit{"I want to study populist parties because I want to find out how they shape individual attitudes towards immigrants"} 
+\end{center}
+\end{frame}
+
+\begin{frame}{Research question in the social sciences}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item \textbf{One sentence} followed by a question mark
+                \vspace{0.3cm}
+                \item It \textbf{specifies} the aspects of your topic that you're trying to answer
+                \vspace{0.3cm}
+                \item It provides \textbf{guidance} throughout the research process
+                \vspace{0.3cm}
+                \item Explanatory (how? why?) or descriptive (when? what? where? who?) questions
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \begin{center}
+            \includegraphics[width=0.8\linewidth]{Images/Bussola.jpg}
+            \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Good vs bad research questions}
+\begin{columns}
+    \begin{column}{0.3\textwidth}
+        \begin{center}
+            \textbf{Bad examples}
+        \end{center}
+        \begin{itemize}
+            \item Should abortion be legal? 
+            \item Does age affect people's attending religious ceremonies? 
+            \item What challenges do American citizens face in the current political landscape?
+        \end{itemize}
+    \end{column}
+    \vline
+    \begin{column}{0.7\textwidth}
+        \begin{center}
+            \textbf{Good examples}
+        \end{center}
+        \begin{itemize}
+            \item How do varying legal frameworks for abortion access impact public health outcomes and reproductive rights in different states?
+            \item How do changing demographics and cultural pluralism influence the transformation of religious identities in France?
+            \item How do structural barriers, such as voter ID laws, registration requirements, impact voter turnout and political participation among marginalized communities in the United States?
+        \end{itemize}
+    \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Philosophical vs Social Science Research Questions}
+
+\textbf{Philosophical RQ:} \\
+\vspace{0.3cm}
+How do different philosophical traditions conceptualize the nature of justice, and what are the underlying principles that guide moral reasoning about justice? \\
+\vspace{0.3cm}
+\textbf{Social Science RQ:} \\
+\vspace{0.3cm}
+How do environmental factors, such as socioeconomic status and neighborhood characteristics, influence access to justice and legal representation in Italy?
+\vspace{0.3cm}
+\begin{block}{Main differences}
+Less normative, less theoretical, more specific, relies on empirical evidence but there's no a full dichotomy!
+\end{block}
+ 
+\end{frame}
+
+\begin{frame}{Features of a good research question}
+\begin{columns}[T]
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+    \item Clear, simple, brief \vspace{0.3cm}
+    \item Researchable \vspace{0.3cm}
+    \item Avoid questions that are too moral/normative, vague, yes/no \vspace{0.3cm}
+    \item Do not ask for opinions \\ \textit{"What is best between X and Y?" "What should we do about X?"} \vspace{0.3cm}
+    \item It should be interesting to you! (...but also to others) \vspace{0.3cm}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Images/questionmark.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Theorizing in the social sciences}
+% I won't go too much into the details about what a theory is; y'all are philosophers, so you will probably know much better than me what a theory is.
+\begin{center}
+\textbf{It's important to have a grasp of the theories around your project!} 
+\end{center}
+    \begin{itemize}
+        \item Theories are \textbf{reductionist}: they all have contextual limits, assumptions, and limitations \vspace{0.3cm}
+        \item There is no single \textit{"true"} social science theory but the best theory suited to explain a phenomenon \vspace{0.3cm}
+        \item A good theory will tell you the connections between the elements of your research \vspace{0.3cm}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{How to find relevant theory?}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+    \begin{itemize}
+        \item Reading carefully literature related to your phenomenon of interest \vspace{0.3cm}
+        \item \textbf{Back-and-forth approach}: don't necessarily work only on the theory before the definition of your RQ. You can always read some new books or papers \vspace{0.3cm}
+        \item Use your philosophical knowledge and experience to build a strong theoretical framework 
+    \end{itemize}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/sartori.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{How to "deviate" from a full philosophical thesis}
+\begin{center}
+    What should you say to your supervisor if you want to do a more "politological/sociological" thesis?
+\end{center}
+    \begin{itemize}
+        \item "The \textbf{topic} of my research is.." (maybe you've already read some theories about your topic!)  \vspace{0.3cm}
+        \item "My \textbf{research question} is.." \vspace{0.3cm}
+        \item "I feel like this research question is suited to be investigated in a more politological/sociological way, how could we do it?" \vspace{0.3cm}
+        \item You can also just take a more socially conscious approach to social issues within a normative and philosophical framework \vspace{0.3cm}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{What if you want to develop more empirical research?}
+%%% It's gonna be hard to cover how to do full empirical research today, but I will try to give you some guidelines.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Images/Inductive_deductive.png}
+        \label{fig:enter-label}
+    \end{figure}
+\begin{itemize}
+    \item Purely descriptive questions are not really suited for deductive social science projects
+    \item In a master thesis, it's unlikely that you will have the tools to do a complete empirical research
+\end{itemize}
+\end{frame}
+
+\begin{frame}{You can do an "explorative-descriptive" research}
+\begin{center}
+You can still use some empirical tools to describe your phenomenon and try to answer your research question! \vspace{0.3cm}
+\end{center}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+\textbf{Exploratory-descriptive} research involves: \vspace{0.1cm}
+\begin{itemize}
+    \item Collecting and analyzing data to understand a phenomenon or topic \vspace{0.3cm}
+    \item Describing patterns, trends, and relationships in the data \vspace{0.3cm}
+    \item Generating hypotheses and ideas for further research \vspace{0.3cm}
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/exploration.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+%\begin{frame}{Developing Hypotheses}
+    %Basic definition: Hypotheses serve to establish links between potential causes and likely effects while specifying the underlying logic.
+    %\begin{itemize}
+     %   \item Deterministic: "if... then..." 
+      %  \item Probabilistic: "if there is more... then there is less/more..."
+    %\end{itemize}
+    %Hypotheses are motivated by theory.
+    % , but it could be a useful addition to your theoretical background.
+%\end{frame}
+
+
+\begin{frame}{Choosing a suitable approach to collect data}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\textbf{Qualitative} \vspace{0.3cm}
+\begin{itemize}
+    \item Small number of cases \vspace{0.3cm}
+    \item Holistic \vspace{0.3cm}
+    \item In-depth analysis \vspace{0.3cm}
+    \item Less generalizable \vspace{0.3cm}
+\end{itemize}
+\end{center}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{center}
+\textbf{Quantitative} \vspace{0.3cm}
+
+\begin{itemize}
+    \item Large number of cases \vspace{0.3cm}
+    \item Particularistic \vspace{0.3cm}
+    \item Broad analysis \vspace{0.3cm}
+    \item More generalizable \vspace{0.3cm}
+\end{itemize}
+\end{center}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Qualitative Methods}
+\begin{columns}[T]
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+    \item An interpretative form of research \vspace{0.3cm}
+    \item Involves data collection (interviews, fieldwork) \vspace{0.3cm}
+    \item Advantage: goes beyond statistical inference, collects novel information \vspace{0.3cm}
+    \item Disadvantage: harder to generalize or replicate \vspace{0.3cm}
+\end{itemize}
+%Qualitative analysis is not just interviews! Example: Process training, a research method for tracing causal mechanisms using detailed, within-case empirical analysis of how a causal process plays out in a case.
+\end{column}
+
+\begin{column}{0.4\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Images/interviews.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Quantitative Methods}
+\begin{columns}[T]
+\begin{column}{0.4\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Images/gaia.jpeg}
+    \label{fig:enter-label}
+\end{figure}
+\end{column}
+
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+    \item Examination of social phenomena, using statistical models and mathematical theories \vspace{0.3cm}
+    \item Often looks at a statistical relationship between an independent variable and a dependent variable (X affects Y and by how much) \vspace{0.3cm}
+    \item Advantages: generalizable, replicable \vspace{0.3cm}
+    \item Disadvantages: inference is limited by statistics \vspace{0.3cm}
+\end{itemize}
+%It's important to keep in mind the difference between deterministic and probabilistic outcomes and the statistical limitations. Some quantitative studies are used in a deterministic way.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Quant or Qual?}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+How to choose between qualitative and quantitative methods? \vspace{0.3cm}
+\begin{itemize}
+    \item Number of observations of phenomenon (large vs. small N)\vspace{0.3cm}
+    \item Your research question\vspace{0.3cm}
+    \item Guided by the feasibility of data collection \vspace{0.3cm}
+    \item Don't choose based on your skills! You can always learn something new
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Images/bivio.jpg}
+    \label{fig:enter-label}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Case selection in the social sciences}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+What is a case? \vspace{0.3cm}
+\begin{itemize}
+    \item One unit of observation  of your phenomenon \vspace{0.3cm}
+    \item A study of 5 countries = 5 cases; \\ a study of two political parties = 2 cases \vspace{0.3cm}
+    \item Both qualitative and quantitative analysis selects cases \vspace{0.3cm}
+    \item Quantitative is large N, qualitative is small N \vspace{0.3cm}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{Images/nonunadimeno.png}
+    \caption{Social movement}
+    \label{fig:enter-label}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{Images/Afd logo.jpg}
+    \caption{Populist party}
+    \label{fig:enter-label}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{How to do the "selection"?}
+\begin{itemize}
+    \item Cases must be selected \textbf{purposefully} and with a good motivation \vspace{0.3cm}
+    \item There is no "right" case\vspace{0.3cm}
+    \item Not all case selection types generate the same insights\vspace{0.3cm}
+    \item It must suit your research question and the selection reasons must be transparent\vspace{0.3cm}
+    \item There will always be some sort of selection bias \vspace{0.3cm}
+    \item Single case vs comparative case selection
+\end{itemize}
+\end{frame}
+
+\begin{frame}{You can choose just one case}
+Single case selection types: \vspace{0.3cm}
+\begin{itemize}
+    \item \textbf{Extreme}: has an extremely low or high value on the central variable\vspace{0.3cm}
+    \item \textbf{Critical} or \textbf{influential}: "If it's valid for this case, it's valid for all (or many) cases", on the converse, "If it's not valid for this case, then it's not valid for any (or only few cases) \vspace{0.3cm}
+    \item \textbf{Typical}: an example of the phenomenon under investigation\vspace{0.3cm}
+    \item \textbf{Deviant}: has a combination of characteristics different from most other units \vspace{0.3cm}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Comparing cases: Most Similar Design}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Case-pairs need to be as similar as possible and vary only in one regard \vspace{0.3cm}
+                \item Logic: isolate the effect of this one aspect \vspace{0.3cm}
+                \item If these systems are so similar, why did they have different outcomes?
+            \end{itemize}
+        \end{column}
+        \vline
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Hypothesis: "The higher the unemployment rate of a city, the higher the crime rate"\vspace{0.3cm}
+                \item Cases: 1 city with high unemployment, 1 city low unemployment but similar in other regards (size, region, etc)\vspace{0.3cm}
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+    
+\begin{frame}{Comparing cases: Most Different Design}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Case-pairs need to be as different as possible in many regards, with a similar outcome\vspace{0.3cm}
+                \item Logic: the background factors that differ across the cases are unlikely to be causes of Y since that outcome is constant across the cases\vspace{0.3cm}
+                \item If these cases are so different, why do they have this common aspect?
+            \end{itemize}
+        \end{column}
+        \vline
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Country A: majoritarian, winner-take-all representational system\vspace{0.3cm}
+                \item Country B: proportional representation system\vspace{0.3cm}
+                \item High degree of efficiency and consensus in the legislative process in both countries               
+            \end{itemize}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Case Selection Considerations}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+    \item What is the case or cases that you have selected? \vspace{0.3cm}
+    \item What is the rationale for having selected them? \vspace{0.3cm}
+    \item How is this selection not random? \vspace{0.3cm}
+    \item What are the potential sources of bias in your choices? \vspace{0.3cm}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/chaos.PNG}
+    \label{fig:enter-label}
+\end{figure}
+\begin{center}
+Don't let the chaos guide your choice!
+    
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+%cosa facciamo e cosa no
+
+
+\begin{frame}[plain]
+\centering
+\vspace{0.6cm}
+\textbf{\large Thank You for Your Attention! Any questions?}
+\vspace{0.3cm}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/nigh-king-got.png}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Bibliography}
+    \begin{itemize}
+    \item Bryman, A. (2012) Social research methods. 4th ed. New York: Oxford University Press.
+    \item Corbetta, P. (2014) Metodologia e tecniche della ricerca sociale. 2. ed. Bologna: Il mulino.
+    \item Panke, D. (2018) Research design and method selection: making good choices in the social sciences. Los Angeles: SAGE.
+    \item Seawright, J. et al. (2014) ‘Case Selection Techniques in Case Study Research: A Menu of Qualitative and Quantitative Options’, in Tight, M., Case Studies. United Kingdom: SAGE
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
