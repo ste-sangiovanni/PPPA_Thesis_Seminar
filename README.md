@@ -1,7 +1,7 @@
 # Thesis Seminar Series: Research Design and Methods
 
-**Master's Degree in Philosophy, Politics, and Public Administration (PPPA)**  
-Seminar Series Organized by the PPPA Program  
+**Master's Degree in Politics, Philosophy and Public Affairs (PPPA)**  
+Seminar Series Organized by the course [Politics, Philosophy and Public Affairs](https://www.unimi.it/it/corsi/laurea-magistrale/politics-philosophy-and-public-affairs-pppa), University of Milan
 
 ---
 
