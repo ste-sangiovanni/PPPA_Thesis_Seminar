@@ -3,12 +3,10 @@
 **Master's Degree in Politics, Philosophy and Public Affairs (PPPA)**  
 Seminar Series Organized by the course [Politics, Philosophy and Public Affairs](https://www.unimi.it/it/corsi/laurea-magistrale/politics-philosophy-and-public-affairs-pppa), University of Milan
 
----
-
 ## Overview
 
-This repository contains slides and LaTeX code from two seminars held as part of the PPPA Thesis Seminar Series. These seminars aimed to provide students with practical tools for structuring research projects and applying quantitative and qualitative methodologies in the social sciences.
-The seminars were primarily targeted at second-year students preparing to write their theses. 
+This repository contains slides and LaTeX code from two seminars held as part of the PPPA Thesis Seminar Series. These seminars aimed to provide students with practical tools for **structuring research projects** and **applying quantitative and qualitative** methodologies in the social sciences. The seminars were primarily targeted at second-year students preparing to write their theses. 
+The materials are intended to support PPPA students in developing their research skills and methodologies for thesis writing.  
 
 ---
 
@@ -32,16 +30,6 @@ This seminar focused on:
 - Key tools such as interviews, focus groups, and content analysis.  
 - Practical tips for applying qualitative methods in thesis research.  
 
----
 
-## Contents
-
-This repository includes:  
-- **Slides**: Visual presentations for each seminar.  
-- **LaTeX Code**: Source code used to generate the slides.  
-
-The materials are intended to support PPPA students in developing their research skills and methodologies for thesis writing.  
-
----
 
 
